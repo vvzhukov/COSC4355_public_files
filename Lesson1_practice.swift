@@ -46,7 +46,7 @@ let myConst = 30 // integer
 // same type as the value you are assigning
 
 // You may specify the type of the variable
-let sxplicitConst: Double = 70
+let explicitConst: Double = 70
 
 // Values are never implicitly converted to another type
 // Need to convert - make instance of the required type
