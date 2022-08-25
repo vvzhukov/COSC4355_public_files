@@ -1,4 +1,4 @@
-// Meterials used:
+// Materials used:
 // 1. https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
 // 2. https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
 // 3. https://www.hackingwithswift.com/read/0/14/enumerations
