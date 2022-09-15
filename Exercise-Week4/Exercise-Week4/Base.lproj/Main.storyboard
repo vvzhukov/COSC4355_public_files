@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vyb-ig-FtM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Statistics-->
+        <scene sceneID="H3i-0v-IFV">
+            <objects>
+                <viewController id="YH7-NR-X46" customClass="StatViewController" customModule="Exercise_Week4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mTY-U6-iF5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Statistics" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWR-6l-405">
+                                <rect key="frame" x="87" y="79" width="240" height="46"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OB5-IR-MxE"/>
+                                    <constraint firstAttribute="height" constant="46" id="hXf-48-PEs"/>
+                                </constraints>
+                                <color key="textColor" red="0.16862745098039217" green="0.34509803921568627" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="99C-Gi-oyN" userLabel="Left Labels Stack View">
+                                <rect key="frame" x="20" y="205" width="345" height="117"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="# of times same cards: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GW9-Uj-6RZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="36"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="305" id="Gvd-4U-QBB"/>
+                                            <constraint firstAttribute="height" constant="36" id="pUr-Ut-PDv"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.16862745100000001" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="# of times different cards: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-hJ-DZb">
+                                        <rect key="frame" x="0.0" y="81" width="345" height="36"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="345" id="YoI-2t-gvK"/>
+                                            <constraint firstAttribute="height" constant="36" id="aZr-Zh-jVu"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.16862745100000001" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="bau-A2-NdN" userLabel="Right Labels Stack View">
+                                <rect key="frame" x="354" y="205" width="40" height="117"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0H-XC-tfE">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="36"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Hl6-Xj-C4d"/>
+                                            <constraint firstAttribute="height" constant="36" id="dMI-7v-Noa"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.16862745100000001" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rsk-Q6-uPq">
+                                        <rect key="frame" x="0.0" y="81" width="40" height="36"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.92156862750000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="C5e-Ub-xmk"/>
+                                            <constraint firstAttribute="height" constant="36" id="KLR-nX-f3D"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.16862745100000001" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hGJ-fV-8Im"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.92156862745098034" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WWR-6l-405" firstAttribute="top" secondItem="hGJ-fV-8Im" secondAttribute="top" constant="35" id="5dj-8l-ZQH"/>
+                            <constraint firstItem="99C-Gi-oyN" firstAttribute="top" secondItem="WWR-6l-405" secondAttribute="bottom" constant="80" id="8Ja-LW-1kQ"/>
+                            <constraint firstItem="hGJ-fV-8Im" firstAttribute="trailing" secondItem="bau-A2-NdN" secondAttribute="trailing" constant="20" id="IDZ-6d-MwX"/>
+                            <constraint firstItem="99C-Gi-oyN" firstAttribute="leading" secondItem="hGJ-fV-8Im" secondAttribute="leading" constant="20" id="PWD-Ch-JB5"/>
+                            <constraint firstItem="bau-A2-NdN" firstAttribute="top" secondItem="WWR-6l-405" secondAttribute="bottom" constant="80" id="QxD-Qz-HcX"/>
+                            <constraint firstItem="WWR-6l-405" firstAttribute="centerX" secondItem="mTY-U6-iF5" secondAttribute="centerX" id="i2c-4G-UNk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" image="number.square.fill" catalog="system" id="pMW-oA-qhF"/>
+                    <connections>
+                        <outlet property="diffCardLabel" destination="Rsk-Q6-uPq" id="Psi-Gh-Ot5"/>
+                        <outlet property="sameCardLabel" destination="x0H-XC-tfE" id="fpW-5b-MYW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qcd-ub-BD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="187"/>
+        </scene>
+        <!--Card Game-->
+        <scene sceneID="s3r-gZ-v9l">
+            <objects>
+                <viewController title="Card Game" id="1iL-PG-S6T" customClass="GameViewController" customModule="Exercise_Week4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fK1-8R-ZON">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f4y-Lu-GHH" userLabel="Card Img Stack View">
+                                <rect key="frame" x="142" y="110" width="130" height="475"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="MNN-3g-gdD">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="KXH-Fv-eaR"/>
+                                            <constraint firstAttribute="height" constant="230" id="tHe-Ur-yYs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="NrZ-ra-QfF">
+                                        <rect key="frame" x="0.0" y="245" width="130" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="7mz-1O-yZ7"/>
+                                            <constraint firstAttribute="height" constant="230" id="t8G-fY-FsC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Card Game" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWf-d0-htG">
+                                <rect key="frame" x="87" y="54" width="240" height="46"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6jk-Vf-lz4"/>
+                                    <constraint firstAttribute="height" constant="46" id="h7Y-G9-9Rx"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcx-PR-EcJ">
+                                <rect key="frame" x="107" y="753" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.74901960784313726" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Nl-RU-R4x"/>
+                                    <constraint firstAttribute="height" constant="50" id="kpV-AP-7iv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleImages:" destination="1iL-PG-S6T" eventType="touchUpInside" id="4OF-qE-Afi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ru9-tb-v3W"/>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.34509803921568627" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="OWf-d0-htG" firstAttribute="centerX" secondItem="fK1-8R-ZON" secondAttribute="centerX" id="7T6-Jt-sK3"/>
+                            <constraint firstItem="ru9-tb-v3W" firstAttribute="bottom" secondItem="Wcx-PR-EcJ" secondAttribute="bottom" constant="10" id="gJ3-Gq-J8E"/>
+                            <constraint firstItem="f4y-Lu-GHH" firstAttribute="top" secondItem="OWf-d0-htG" secondAttribute="bottom" constant="10" id="lLb-XD-K9Q"/>
+                            <constraint firstItem="OWf-d0-htG" firstAttribute="top" secondItem="ru9-tb-v3W" secondAttribute="top" constant="10" id="m4I-Gx-B9Q"/>
+                            <constraint firstItem="f4y-Lu-GHH" firstAttribute="centerX" secondItem="fK1-8R-ZON" secondAttribute="centerX" id="t0f-8p-316"/>
+                            <constraint firstItem="Wcx-PR-EcJ" firstAttribute="centerX" secondItem="fK1-8R-ZON" secondAttribute="centerX" id="wFy-dZ-DkJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" image="greetingcard.fill" catalog="system" id="9fR-ml-H3l"/>
+                    <connections>
+                        <outlet property="img1" destination="MNN-3g-gdD" id="7JS-Lm-biI"/>
+                        <outlet property="img2" destination="NrZ-ra-QfF" id="Ecp-zl-ejb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAg-Jf-pB6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.6231884057972" y="-505.43478260869568"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uk9-kn-bNL">
+            <objects>
+                <tabBarController id="vyb-ig-FtM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ckl-1Q-BRW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="linkColor"/>
+                        <color key="selectedImageTintColor" red="0.85098039215686272" green="0.57897954251752071" blue="0.32189155942612352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1iL-PG-S6T" kind="relationship" relationship="viewControllers" id="wba-6v-MAd"/>
+                        <segue destination="YH7-NR-X46" kind="relationship" relationship="viewControllers" id="0Da-rc-9Ib"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0e-oU-kIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="-187"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="230.5" height="352"/>
+        <image name="7" width="227.5" height="350.5"/>
+        <image name="greetingcard.fill" catalog="system" width="106" height="128"/>
+        <image name="number.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
