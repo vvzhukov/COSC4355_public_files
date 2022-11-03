@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIV-B5-lYR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l46-7b-Z1u">
+                                <rect key="frame" x="20" y="297" width="350" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Udz-Hc-XCo"/>
+                                    <constraint firstAttribute="height" constant="250" id="pja-9T-ctX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-Vc-svj">
+                                <rect key="frame" x="105" y="577" width="180" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZZ-pp-oac">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MzG-fO-OXN"/>
+                                            <constraint firstAttribute="width" constant="40" id="oeX-h1-ALo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.29411764709999999" green="0.39607843139999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDS-Eb-JI1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0P-tn-dYB">
+                                        <rect key="frame" x="70" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="K9P-GP-A9M"/>
+                                            <constraint firstAttribute="height" constant="40" id="Pl0-At-sNp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="applewatch.case.inset.filled" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendToWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wsw-Bj-heY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUb-V3-XQS">
+                                        <rect key="frame" x="140" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YPL-JY-qJM"/>
+                                            <constraint firstAttribute="width" constant="40" id="lnG-qq-Mm3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="square.and.arrow.down" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eq7-jz-7EP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xVA-cb-x7d">
+                                <rect key="frame" x="25.666666666666657" y="227" width="339" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="phn-Wc-su5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Original"/>
+                                    <segment title="Blur"/>
+                                    <segment title="Sepia"/>
+                                    <segment title="Vintage"/>
+                                    <segment title="Noir"/>
+                                </segments>
+                                <connections>
+                                    <action selector="applyFilter:" destination="BYZ-38-t0r" eventType="valueChanged" id="w1r-Kf-1tZ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wWj-kT-aQ1"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xVA-cb-x7d" firstAttribute="centerX" secondItem="xIV-B5-lYR" secondAttribute="centerX" id="42f-S5-z0k"/>
+                            <constraint firstItem="l46-7b-Z1u" firstAttribute="centerY" secondItem="xIV-B5-lYR" secondAttribute="centerY" id="4fF-dp-Z8S"/>
+                            <constraint firstItem="l46-7b-Z1u" firstAttribute="centerX" secondItem="xIV-B5-lYR" secondAttribute="centerX" id="5m5-4v-cVU"/>
+                            <constraint firstItem="l46-7b-Z1u" firstAttribute="top" secondItem="xVA-cb-x7d" secondAttribute="bottom" constant="30" id="ZLK-Se-TXq"/>
+                            <constraint firstItem="AwF-Vc-svj" firstAttribute="top" secondItem="l46-7b-Z1u" secondAttribute="bottom" constant="30" id="lgx-Sx-Fg6"/>
+                            <constraint firstItem="AwF-Vc-svj" firstAttribute="centerX" secondItem="xIV-B5-lYR" secondAttribute="centerX" id="xjA-Io-vzR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="l46-7b-Z1u" id="gE2-NR-0xS"/>
+                        <outlet property="saveButton" destination="sUb-V3-XQS" id="9qc-re-T1g"/>
+                        <outlet property="selectButton" destination="xZZ-pp-oac" id="IlU-gV-9Ia"/>
+                        <outlet property="watchButton" destination="Y0P-tn-dYB" id="AZZ-lY-avD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applewatch.case.inset.filled" catalog="system" width="128" height="128"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
