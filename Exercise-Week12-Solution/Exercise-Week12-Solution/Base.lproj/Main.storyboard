@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="26Q-vt-wqp">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Ananlysis-->
+        <scene sceneID="gvp-ng-UPf">
+            <objects>
+                <viewController id="Owp-FT-4ef" customClass="TextAnalyzerViewController" customModule="Exercise_Week12_Solution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5YB-yl-DRK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRA-Ru-EQp">
+                                <rect key="frame" x="2" y="268" width="410" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9Gd-GS-khF">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.27058823529999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pab-Q5-MrF">
+                                <rect key="frame" x="10" y="40" width="394" height="50"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tr3-qi-CGs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ObY-wp-Ndv">
+                                <rect key="frame" x="17" y="498" width="380" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bc9-8o-mP0"/>
+                                    <constraint firstAttribute="width" constant="380" id="h12-UE-4e6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Text"/>
+                                    <segment title="Lemma"/>
+                                    <segment title="Sentiment"/>
+                                    <segment title="Tokens"/>
+                                </segments>
+                                <connections>
+                                    <action selector="applyNLP:" destination="Owp-FT-4ef" eventType="valueChanged" id="LQX-1q-bQ3"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5dP-MW-gE9"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pab-Q5-MrF" firstAttribute="leading" secondItem="5dP-MW-gE9" secondAttribute="leading" constant="10" id="3cy-wL-FQT"/>
+                            <constraint firstItem="pab-Q5-MrF" firstAttribute="top" secondItem="5dP-MW-gE9" secondAttribute="top" constant="40" id="9ZC-kW-3Bd"/>
+                            <constraint firstItem="ObY-wp-Ndv" firstAttribute="top" secondItem="aRA-Ru-EQp" secondAttribute="bottom" constant="30" id="Enj-Ng-qtH">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="aRA-Ru-EQp" firstAttribute="centerY" secondItem="5YB-yl-DRK" secondAttribute="centerY" id="Mow-aO-NvA"/>
+                            <constraint firstItem="5dP-MW-gE9" firstAttribute="trailing" secondItem="pab-Q5-MrF" secondAttribute="trailing" constant="10" id="NOS-gE-qBa"/>
+                            <constraint firstItem="aRA-Ru-EQp" firstAttribute="leading" secondItem="5dP-MW-gE9" secondAttribute="leading" constant="2" id="h09-oF-Dc0"/>
+                            <constraint firstItem="5dP-MW-gE9" firstAttribute="trailing" secondItem="aRA-Ru-EQp" secondAttribute="trailing" constant="2" id="oj8-ge-2n5"/>
+                            <constraint firstItem="ObY-wp-Ndv" firstAttribute="centerX" secondItem="5YB-yl-DRK" secondAttribute="centerX" id="ruB-GV-Baf"/>
+                            <constraint firstItem="aRA-Ru-EQp" firstAttribute="centerX" secondItem="5YB-yl-DRK" secondAttribute="centerX" id="xgl-zT-SpE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Text Ananlysis" image="text.bubble.fill" catalog="system" id="t0P-Rx-goV"/>
+                    <connections>
+                        <outlet property="inputText" destination="pab-Q5-MrF" id="uOE-9N-1Tm"/>
+                        <outlet property="nlpOutput" destination="aRA-Ru-EQp" id="h7w-TY-cUA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7i-BC-Cdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.5797101449277" y="455.70652173913049"/>
+        </scene>
+        <!--Image Classification-->
+        <scene sceneID="4aB-pI-yn4">
+            <objects>
+                <viewController id="PuQ-fK-LLK" customClass="ImageClassifierViewController" customModule="Exercise_Week12_Solution" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vmt-kE-EIp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWb-fM-thS">
+                                <rect key="frame" x="147" y="567" width="120" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwk-7S-7Bf">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="IVl-AS-Ay6">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="45"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="45"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="60" id="J11-dB-NjH">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="45"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="45"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" image="text.below.photo.fill.rtl" catalog="system">
+                                            <color key="titleColor" red="0.11815441560000001" green="0.13951005399999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shuffleImage:" destination="PuQ-fK-LLK" eventType="touchUpInside" id="qy0-Nq-zTk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIs-xf-UsG">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="goE-JR-DNk"/>
+                                            <constraint firstAttribute="width" constant="60" id="rvt-0I-nPn"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="text.magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="analyzeText:" destination="PuQ-fK-LLK" eventType="touchUpInside" id="kZa-hs-6iE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RvV-Bs-zgP">
+                                <rect key="frame" x="7" y="60" width="400" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="JsO-e1-JTS">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="180"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="180"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="400" id="kvn-Xo-ZLm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTW-sk-7HT">
+                                <rect key="frame" x="32" y="360" width="350" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bl8-Ne-p9f"/>
+                                    <constraint firstAttribute="width" constant="350" id="cEw-A3-KHe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jvX-sn-pxP"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RvV-Bs-zgP" firstAttribute="centerX" secondItem="vmt-kE-EIp" secondAttribute="centerX" id="4Xr-To-SA3"/>
+                            <constraint firstItem="tTW-sk-7HT" firstAttribute="centerX" secondItem="vmt-kE-EIp" secondAttribute="centerX" id="RLK-Gi-5xH"/>
+                            <constraint firstItem="YWb-fM-thS" firstAttribute="centerX" secondItem="vmt-kE-EIp" secondAttribute="centerX" id="gXf-bQ-25h"/>
+                            <constraint firstItem="tTW-sk-7HT" firstAttribute="top" secondItem="RvV-Bs-zgP" secondAttribute="bottom" constant="20" id="nze-s5-lEA">
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="RvV-Bs-zgP" firstAttribute="top" secondItem="jvX-sn-pxP" secondAttribute="top" constant="60" id="sbO-5d-8Iv">
+                                <variation key="heightClass=compact-widthClass=compact" constant="2"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="jvX-sn-pxP" firstAttribute="bottom" secondItem="YWb-fM-thS" secondAttribute="bottom" constant="60" id="uyK-lP-OAL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image Classification" image="photo.fill" catalog="system" id="Sq8-9s-7H2"/>
+                    <connections>
+                        <outlet property="classificationLabel" destination="tTW-sk-7HT" id="Wqh-33-4fq"/>
+                        <outlet property="imgView" destination="RvV-Bs-zgP" id="Uc8-6r-r74"/>
+                        <outlet property="shuffleImgButton" destination="Zwk-7S-7Bf" id="bZE-qs-ciw"/>
+                        <outlet property="textButton" destination="xIs-xf-UsG" id="0yp-N4-Ba5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrW-56-dix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443" y="-234"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8iD-cH-KCy">
+            <objects>
+                <tabBarController id="26Q-vt-wqp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LeL-h4-LY6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.098039215686274508" green="0.27058823529411763" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PuQ-fK-LLK" kind="relationship" relationship="viewControllers" id="X2J-pP-0fv"/>
+                        <segue destination="Owp-FT-4ef" kind="relationship" relationship="viewControllers" id="gWb-3h-b4e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnU-hh-geU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <image name="text.below.photo.fill.rtl" catalog="system" width="117" height="128"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="117"/>
+    </resources>
+</document>
