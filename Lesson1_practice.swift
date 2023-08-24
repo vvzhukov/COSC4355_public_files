@@ -161,6 +161,7 @@ while n < 100 {
     n *= 2
 }
 
+// repeat while is the alternative to do while
 var m = 2
 repeat {
     m *= 2
