@@ -35,7 +35,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        downloadData(url: URL(string: "http://cpl.uh.edu/courses/ubicomp/fall2021/webservice/companies_map.json")!)
+        downloadData(url: URL(string: "http://m.cpl.uh.edu/courses/ubicomp/fall2021/webservice/companies_map.json")!)
     }
     
     func downloadData(url: URL) {
@@ -58,7 +58,18 @@ class TableViewController: UITableViewController {
 
 
     // MARK: - Table view data source
-
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            //print("Deleted")
+            self.downloadedCompanies.remove(at: indexPath.row)
+            self.tableView.beginUpdates()
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.tableView.endUpdates()
+        }
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
